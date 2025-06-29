@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(6, 6, 42); /* Consistent dark blue */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(5, 5, 70);
+  padding: 16px 0;
+}
+
+nav .left {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+nav .right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 6px 0;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+}
+
+/* Main Sections */
+.firstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  padding: 0 5%;
+}
+
+.leftSection {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.rightSection img {
+  width: 90%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.purple {
+  color: blueviolet;
+}
+
+main hr {
+  border: 0;
+  background-color: #9c97f1;
+  height: 1px;
+  margin: 32px 10%;
+}
+
+/* Projects Section */
+.SecondSection {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.text-gray {
+  color: gray;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.SecondSection h1 {
+  font-size: 1.5rem;
+  color: yellowgreen;
+  margin-bottom: 24px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  margin: 32px 0;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  text-align: center;
+  background: none;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.image-top {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 8px;
+}
+
+.vertical-tittle {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  position: static;
+  width: auto;
+}
+
+.vertical-text {
+  font-size: 0.9rem;
+  color: rgb(153, 153, 234);
+  margin-bottom: 16px;
+  position: static;
+  width: auto;
+}
+
+/* Footer */
+.footer {
+  background: #000000;
+  color: #bdbdbd;
+  padding: 32px 5% 0;
+  margin-top: 32px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  min-width: 180px;
+  margin-bottom: 24px;
+}
+
+.footer-section h4 {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.support-btn {
+  display: inline-block;
+  background: transparent;
+  color: #00e0d3;
+  border: 1px solid #00e0d3;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 10px;
+}
+
+.support-btn:hover {
+  background: #00e0d3;
+  color: #10182b;
+}
+
+.support-note {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #bdbdbd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #295ee4;
+  padding: 16px 0;
+  text-align: center;
+  color: #bdbdbd; /* Changed from #b82121 for readability */
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-bottom .icon {
+  margin: 0 2px;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  nav .left {
+    margin-bottom: 0;
+  }
+  nav .right ul {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .firstSection {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    margin: 80px 0;
+  }
+  .leftSection {
+    text-align: left;
+    margin-bottom: 0;
+    max-width: 50%;
+    font-size: 2.2rem;
+  }
+  .rightSection img {
+    max-width: 350px;
+  }
+  .box {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .vertical {
+    max-width: 220px;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
