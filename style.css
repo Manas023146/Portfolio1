@@ -76,10 +76,9 @@ nav ul li a:hover {
   color: blueviolet;
 }
 
-.element.style {
-    color: blueviolet;
+#element {
+    color: blueviolet
 }
-
 
 main hr {
   border: 0;
