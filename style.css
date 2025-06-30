@@ -63,6 +63,11 @@ nav ul li a:hover {
   margin-bottom: 24px;
 }
 
+.leftSection h2{
+  color: blueviolet;
+  font-size: 1.9rem;
+}
+
 .rightSection img {
   width: 90%;
   max-width: 320px;
