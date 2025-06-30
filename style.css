@@ -189,11 +189,18 @@ main hr {
 }
 
 .footer-section ul li a {
-  color: white;
+  display:flex;
+  color: rgb(13, 215, 148);
   text-decoration: none;
-  display: flex;
   align-items: center;
   gap: 8px;
+  border: 3px solid;
+  border-radius: 8px;
+  border-color:#00e0d3;
+  padding: 4px 8px;
+}
+.footer-section ul li a:hover{
+  background-color: rgb(8, 0, 255);;
 }
 
 .icon {
