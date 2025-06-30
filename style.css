@@ -76,8 +76,8 @@ nav ul li a:hover {
   color: blueviolet;
 }
 
-#element{
-  color: blueviolet;
+element.style {
+    color: blueviolet;
 }
 
 
